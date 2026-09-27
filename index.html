@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Result Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Result Application</h1>
+
+      <form id="resultForm" novalidate>
+        <div class="form-group">
+          <label for="studentName">Student Name</label>
+          <input
+            type="text"
+            id="studentName"
+            placeholder="Enter student name"
+          />
+          <span class="error" id="err-name"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="htmlMarks">HTML Marks (0-100)</label>
+          <input type="text" id="htmlMarks" placeholder="Enter HTML marks" />
+          <span class="error" id="err-html"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="cssMarks">CSS Marks (0-100)</label>
+          <input type="text" id="cssMarks" placeholder="Enter CSS marks" />
+          <span class="error" id="err-css"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="jsMarks">JavaScript Marks (0-100)</label>
+          <input
+            type="text"
+            id="jsMarks"
+            placeholder="Enter JavaScript marks"
+          />
+          <span class="error" id="err-js"></span>
+        </div>
+
+        <button type="submit" id="calculateBtn">Calculate Result</button>
+      </form>
+
+      <!-- Result is rendered here dynamically by JS -->
+      <div class="result-box" id="resultBox"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
